@@ -233,7 +233,6 @@ li a i:hover
     float: right;
     margin: 0;
     padding: 0;
-    margin-right: 20%;
 }
 
 .h2_right::before
@@ -244,7 +243,8 @@ li a i:hover
     width: 100px;
     height: 1px;
     margin-right: 20px;
-    background-color: pink;
+    background-color: #ECD6F3;
+    opacity: 0.8;
 }
 
 .h2_right::after
@@ -255,5 +255,15 @@ li a i:hover
     width: 100px;
     height: 1px;
     margin-left: 20px;
-    background-color: pink;
+    background-color: #ECD6F3;
+    opacity: 0.8;
+}
+
+.data_right
+{
+    width: 86%;
+    float: right;
+    height: 79vh;
+    margin-top: 4em;
+    margin-right: 15%;
 }
