@@ -10,19 +10,11 @@
     src: url("../fonts/nombre.otf");
 }
 
-@font-face
-{
-    font-family: "La Belle Aurora";
-    src: url("../fonts/LaBelleAurora.ttf");
-}
-
 body
 {
     background-color: #0a192f;
     counter-reset: my-sec-counter;
-    overflow: hidden;
 }
-
 section
 {
     height: 100vh;
@@ -33,39 +25,17 @@ h1
     color: white;
 }
 
+#main_section_text
+{
+    color: #64ffda;
+}
+
 .principal_data
 {
-    width: 86%;
+    width: 90%;
     float: right;
     min-height: 50vh;
     margin-top: 4em;
-}
-
-#opacity_control
-{
-    opacity: 0;
-    transition: opacity .5s .25s ease-out;
-}
-
-#opacity_control.is-visible
-{
-    opacity: 1;
-}
-
-#description
-{
-    transform: translate(0, calc(-50% + 1em));
-}
-
-.is-visible #description
-{
-    transform: translate(0, -50%);
-}
-
-#description
-{
-    transition: transform 4s .35s cubic-bezier(0,1,.3,1);
-    will-change: transform;
 }
 
 #main_section_hi
@@ -75,13 +45,12 @@ h1
     text-align: center;
     font-size: 1em;
     width: 60%;
-    color: #64ffda;
 }
 
 #name
 {
     font-family: "Cream Cake";
-    font-size: 5.4em;
+    font-size: 5em;
     margin: 0;
     padding: 0;
 }
@@ -89,7 +58,7 @@ h1
 #build
 {
     color: #64ffda;
-    font-size: 4.6em;
+    font-size: 4em;
     margin: 0;
     padding: 0;
     opacity: 0.8;
@@ -101,14 +70,14 @@ h1
     margin-right: 0.1em;
     content: "";
     height: 1px;
-    flex: 0.56;
+    flex: 0.5;
     background-color: #ECD6F3;
 }
 
 #build_web
 {
     color: #64ffda;
-    font-size: 4.6em;
+    font-size: 4em;
     margin: 0;
     padding: 0;
     display: flex;
@@ -180,10 +149,10 @@ li a:after
     padding: 0px;
     align-items: center;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     margin: 0;
-    width: 5%;
+    width: 100%;
 }
 
 li a i
@@ -211,10 +180,47 @@ li a i:hover
     transition: 0.3s;
 }
 
-#description
+#square
 {
-    color: #ECD6F3;
-    letter-spacing: 0.1em;
-    line-height: 20pt;
-    opacity: 0.6;
+    background-color:transparent;
+    border: 3px solid #333234;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    -webkit-animation:rescale 2s infinite;
+    animation: rescale 5s infinite;
+    opacity: 0.8;
+    display: inline-block;
 }
+  
+  @-webkit-keyframes rescale{
+    0% {transform:rotate(0deg);}
+    10% {transform:rotate(36deg);}
+    15% {transform:rotate(50deg);}
+    20% {transform:rotate(72deg);}
+    25% {transform:rotate(90deg);}
+    30% {transform:rotate(108deg);}
+    35% {transform:rotate(120deg);}
+    40% {transform:rotate(144deg);}
+    45% {transform:rotate(162deg);}
+    50% {transform:rotate(180deg);}
+    60% {transform:rotate(216deg);}
+    70% {transform:rotate(252deg);}
+    80% {transform:rotate(288deg);}
+    90% {transform:rotate(334deg);}
+    100% {transform:rotate(360deg);}
+  }
+  
+  @keyframes rescale{
+    0% {transform:rotate(0deg);}
+    10% {transform:rotate(36deg);}
+    20% {transform:rotate(72deg);}
+    30% {transform:rotate(108deg);}
+    40% {transform:rotate(144deg);}
+    50% {transform:rotate(180deg);}
+    60% {transform:rotate(216deg);}
+    70% {transform:rotate(252deg);}
+    80% {transform:rotate(288deg);}
+    90% {transform:rotate(334deg);}
+    100% {transform:rotate(360deg);}
+  }
