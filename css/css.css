@@ -36,7 +36,7 @@ h1
 {
     width: 86%;
     float: right;
-    min-height: 50vh;
+    height: 79vh;
     margin-top: 4em;
 }
 
@@ -100,7 +100,7 @@ h1
     margin-right: 0.1em;
     content: "";
     height: 1px;
-    flex: 0.56;
+    width: 50%;
     background-color: #ECD6F3;
 }
 
@@ -112,6 +112,11 @@ h1
     padding: 0;
     display: flex;
     opacity: 0.8;
+}
+
+nav
+{
+    height: 10%;
 }
 
 nav a
@@ -216,4 +221,39 @@ li a i:hover
     letter-spacing: 0.1em;
     line-height: 20pt;
     opacity: 0.6;
+}
+
+.h2_right
+{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 3em;
+    color: #64ffda;
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-right: 20%;
+}
+
+.h2_right::before
+{
+    content: "";
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 1px;
+    margin-right: 20px;
+    background-color: pink;
+}
+
+.h2_right::after
+{
+    content: "";
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: pink;
 }
