@@ -35,10 +35,11 @@ h1
 
 .principal_data
 {
-    width: 86%;
-    float: right;
+    width: 60%;
+    float: left;
     height: 79vh;
     margin-top: 4em;
+    margin-left: 10%;
 }
 
 #opacity_control
@@ -179,6 +180,15 @@ li a:after
     float: left;
 }
 
+.scrolling
+{
+    width: 6%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    float: right;
+}
+
 .list_social_network
 {
     list-style: none;
@@ -207,6 +217,42 @@ li a i
     margin: 0px auto;
     background-color: #ECD6F3;
     opacity: 0.8;
+}
+
+.scrolling_list
+{
+    list-style: none;
+    padding: 0px;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    width: 5%;
+}
+
+.scrolling_list:before
+{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 37vh;
+    margin: 0px auto;
+    background-color: transparent;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.scrolling_list:after
+{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 37vh;
+    margin: 0px auto;
+    background-color: transparent;
+    opacity: 0.8;
+    margin-top: 10px;
 }
 
 li a i:hover
@@ -274,4 +320,32 @@ main
 {
     height: 100vh;
     overflow: hidden;
+}
+
+.button_section
+{
+    width: 10px;
+    height: 15px;
+    background-color: transparent;
+    border-color: #ECD6F3;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border-style: solid;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .5s .25s ease-out;
+    transition: border-radius 1s, border-color 1s;
+}
+
+.actual_button
+{
+    border-radius: 0%;
+    background-color: transparent;
+    border-color: #64ffda;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.actual_button::after
+{
 }
