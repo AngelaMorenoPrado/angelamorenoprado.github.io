@@ -25,6 +25,7 @@ body
 section
 {
     height: 100vh;
+    scroll-behavior: smooth;
 }
 
 h1
@@ -267,4 +268,10 @@ li a i:hover
     height: 79vh;
     margin-top: 4em;
     margin-right: 15%;
+}
+
+main
+{
+    height: 100vh;
+    overflow: hidden;
 }
