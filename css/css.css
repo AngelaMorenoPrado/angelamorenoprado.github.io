@@ -18,14 +18,18 @@
 
 body
 {
-    background-color: #0a192f;
+    background: #181818;
     counter-reset: my-sec-counter;
 }
 
-section
+header
 {
-    height: 100vh;
-    scroll-behavior: smooth;
+    height: 10vh;
+}
+
+#section1
+{
+    height: 80vh;
 }
 
 h1
@@ -118,6 +122,7 @@ h1
 
 nav
 {
+    z-index: 10;
     height: 10%;
 }
 
@@ -203,7 +208,7 @@ li a:after
 
 li a i
 {
-    color: #ECD6F3;
+    color: #64ffda;
     margin-bottom: 16px;
     opacity: 0.5;
 }
@@ -215,7 +220,7 @@ li a i
     width: 1px;
     height: 200px;
     margin: 0px auto;
-    background-color: #ECD6F3;
+    background-color: #64ffda;
     opacity: 0.8;
 }
 
@@ -258,7 +263,7 @@ li a i
 li a i:hover
 {
     opacity: 1;
-    color: #64ffda;
+    color: #7689d8;
     transition: 0.3s;
 }
 
@@ -275,12 +280,37 @@ li a i:hover
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    font-size: 3em;
-    color: #64ffda;
+    font-size: 1.5em;
+    color: #f0535d;
     float: right;
     margin: 0;
     padding: 0;
-    opacity: 0.8;
+    opacity: 1;
+}
+
+.h2_left
+{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #64ffda;
+    float: left;
+    padding: 0;
+    opacity: 1;
+    width: 100%;
+}
+
+.h2_who_is
+{
+    color: #ECD6F3;
+    font-size: 3em;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    opacity: 0.6;
 }
 
 .h2_right::before
@@ -288,38 +318,82 @@ li a i:hover
     content: "";
     display: block;
     position: relative;
-    width: 100px;
+    width: 50px;
     height: 1px;
     margin-right: 20px;
-    background-color: #ECD6F3;
+    background-color: #181818;
     opacity: 0.8;
 }
 
-.h2_right::after
+.h2_left::after
 {
     content: "";
     display: block;
     position: relative;
-    width: 100px;
+    width: 50px;
     height: 1px;
     margin-left: 20px;
-    background-color: #ECD6F3;
+    background-color: #64ffda;
     opacity: 0.8;
 }
+
+.p_right
+{
+    font-size: 1.2em;
+    color: white;
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    text-align: left;
+    margin-right: 5%;
+    text-align: justify;
+    opacity: 0.8;
+}
+
+p a
+{
+    color: #64ffda;
+    text-decoration: none;
+    display: inline-block;
+    opacity: 0.8;
+
+}
+
+p a::after 
+{
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: #64ffda;
+    transition: 300ms;
+}
+
+p a:hover::after
+{
+    width: 100%;
+}
+
 
 .data_right
 {
     width: 86%;
     float: right;
+}
+
+.data_left
+{
+    width: 86%;
+    float: left;
     height: 79vh;
-    margin-top: 4em;
-    margin-right: 15%;
+    margin-left: 10%;
 }
 
 main
 {
     height: 100vh;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .button_section
@@ -327,7 +401,7 @@ main
     width: 10px;
     height: 15px;
     background-color: transparent;
-    border-color: #ECD6F3;
+    border-color: #DE4AF9;
     margin-bottom: 10px;
     border-radius: 50%;
     border-style: solid;
@@ -346,6 +420,85 @@ main
     cursor: pointer;
 }
 
-.actual_button::after
+.angle1
 {
+    z-index: 1;
+    overflow: visible;
+    position: relative;
+    background: #181818;
+}
+
+.angle1:after
+{
+    content: '';
+    width: 94%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    bottom: 0;
+    transform-origin: left bottom;
+    transform: skewY(4deg);
+}
+
+.angle2
+{
+    z-index: -1;
+    overflow: visible;
+    position: relative;
+    background: #181818;
+    height: 100vh;
+}
+
+.tagcloud--item
+{
+    color: #64ffda;
+}
+
+.tagcloud--item:hover
+{
+    color: #f0535d;
+    font-size: 1.5em;
+}
+
+.sphere
+{
+    width: 30%;
+    float: left;
+    margin-right: 10%;
+}
+
+.technologies_right
+{
+    float: right;
+    width: 30%;
+    list-style: none;
+    padding: 0;
+    margin-top: 5%;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    opacity: 0.8;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.technologies_right li 
+{
+    margin-bottom: 5px;
+}
+
+.technologies_right li::before
+{
+    content: '»';
+    color: #64ffda;
+    margin-right: 10%;
+}
+
+#technologies_section
+{
+    width: 50%;
+    float: right;
+    margin-right: 10%;
 }
