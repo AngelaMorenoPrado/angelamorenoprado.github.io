@@ -305,6 +305,7 @@ li a i:hover
     padding: 0;
     opacity: 1;
     width: 100%;
+    opacity: 0.8;
 }
 
 .h2_who_is
@@ -426,15 +427,6 @@ main
     cursor: pointer;
 }
 
-.angle2
-{
-    z-index: -1;
-    overflow: visible;
-    position: relative;
-    background: #181818;
-    height: 100vh;
-}
-
 .tagcloud--item
 {
     color: #64ffda;
@@ -449,14 +441,12 @@ main
 .sphere
 {
     width: 30%;
-    float: left;
-    margin-right: 10%;
 }
 
 .technologies_right
 {
     float: right;
-    width: 30%;
+    width: 40%;
     list-style: none;
     padding: 0;
     margin-top: 5%;
@@ -483,7 +473,14 @@ main
 
 #technologies_section
 {
-    width: 50%;
+    width: 60%;
     float: right;
-    margin-right: 10%;
+    margin-right: 5%;
+}
+
+#picture_section
+{
+    width: 44%;
+    float: left;
+    
 }
