@@ -501,7 +501,6 @@ main
     float: left;
     display: flex;
     justify-content: center;
-    height: 450px;
 }
 
 #picture_section > img 
