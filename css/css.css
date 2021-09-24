@@ -915,7 +915,7 @@ footer
     .sphere
     {
         width: 40%;
-        margin: auto;
+        float: left;
     }
 
     #section1
