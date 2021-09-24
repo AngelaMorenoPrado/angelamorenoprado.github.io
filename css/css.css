@@ -652,6 +652,11 @@ main
     border-radius: 10px;
 }
 
+.img_project_3
+{
+    max-width: 90%;
+}
+
 .text_right
 {
     width: 42%;
