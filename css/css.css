@@ -501,7 +501,7 @@ main
     float: left;
     display: flex;
     justify-content: center;
-    height: 70vh;
+    height: 450px;
 }
 
 #picture_section > img 
@@ -522,7 +522,7 @@ main
     content: '';
     display: block;
     width: 50%;
-    height: 90%;
+    height: auto;
     border-radius: 10px;
     transform: rotate(-4deg);
     position: relative;
