@@ -510,6 +510,7 @@ main
     position: absolute;
     width: 13%;
     z-index: 1;
+    height: 450px;
 }
 
 #picture_section:after
@@ -521,7 +522,7 @@ main
     content: '';
     display: block;
     width: 50%;
-    height: 450px;
+    height: 470px;
     border-radius: 10px;
     transform: rotate(-4deg);
     position: relative;
