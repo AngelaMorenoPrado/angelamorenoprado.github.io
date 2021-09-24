@@ -623,7 +623,7 @@ main
 }
 
 
-@media (min-width:300px)
+@media (max-width:768px)
 {
 
     .icon-menu
