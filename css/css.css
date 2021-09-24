@@ -1004,4 +1004,9 @@ footer
         height: 300px;
     }
 
+    #section1
+    {
+        height: 100vh;
+    }
+
 }
