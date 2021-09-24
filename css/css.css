@@ -104,7 +104,7 @@ header
     font-family: "SF Mono";
     display: flex;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.6vw;
     width: 60%;
     color: #64ffda;
 }
@@ -112,7 +112,7 @@ header
 #name
 {
     font-family: "Cream Cake";
-    font-size: 5.4em;
+    font-size: 5.4vw;
     margin: 0;
     padding: 0;
     color: white;
@@ -121,7 +121,7 @@ header
 #build
 {
     color: #64ffda;
-    font-size: 4.6em;
+    font-size: 4.6vw;
     margin: 0;
     padding: 0;
     opacity: 0.8;
@@ -140,7 +140,7 @@ header
 #build_web
 {
     color: #64ffda;
-    font-size: 4.6em;
+    font-size: 4.6vw;
     margin: 0;
     padding: 0;
     display: flex;
@@ -300,6 +300,8 @@ li a i:hover
     letter-spacing: 0.1em;
     line-height: 20pt;
     opacity: 0.6;
+    font-size: 1.4vw;
+    margin-top: 5%;
 }
 
 .h1_left
@@ -307,7 +309,7 @@ li a i:hover
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     color: #64ffda;
     float: left;
     padding: 0;
@@ -429,7 +431,7 @@ p a:hover::after
     margin-left: auto;
     margin-right: auto;
     overflow: auto;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     position: relative;
 }
 
@@ -622,6 +624,133 @@ main
     display: none;
 }
 
+.img_left
+{
+    max-width: 49%;
+    float: left;
+    margin-left: 2%; 
+    position: absolute;
+    height: 95%;
+}
+
+.img_right
+{
+    max-width: 50%;
+    display: inline-block;
+    margin-top: 3%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 10px;
+}
+
+.img_projects
+{
+    max-width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 10px;
+}
+
+.text_right
+{
+    width: 42%;
+    float: right;
+    margin-right: 3%;
+    margin-left: 3%;
+    vertical-align: middle;
+}
+
+.text_left
+{
+    width: 45%;
+    text-align: justify;
+    display: inline-block;
+    overflow: auto;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.text_project
+{
+    color:black;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.tag_text
+{
+    color: black;
+    font-size: 0.7em;
+    opacity: 0.8;
+}
+
+.margin_tag_text
+{
+    margin-right: 1%;
+}
+
+.link_text
+{
+    color: black;
+    display: inline-block;
+    opacity: 0.6;
+}
+
+.link_div
+{
+    width: 99%;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.project_text
+{
+    max-width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 10px;
+}
+
+.box_project
+{
+    margin: 0;
+}
+
+.section_chart
+{
+    height: auto;
+    width: 100%;
+    overflow: auto;
+}
+
+.text_chart
+{
+    width: 42%;
+    float: left;
+    margin-top: 5%;
+    text-align: center;
+}
+
+footer
+{
+    width: 100%;
+    text-align: center;
+    height: 9vh;
+    bottom: 0;
+    margin-top: auto;
+    float: right;
+    opacity: 0.6;
+}
+
+.chart
+{
+    height: 400px;
+    width: 50%;
+    margin-top: 5%;
+    float: right;
+}
 
 @media (max-width:768px)
 {
@@ -686,12 +815,12 @@ main
 
     #name
     {
-        font-size: 3em;
+        font-size: 3.4em;
     }
 
     #build
     {
-        font-size: 2em;
+        font-size: 2.8em;
     }
 
     #build_web
@@ -701,7 +830,13 @@ main
 
     #description
     {
-        margin-top: 17%;
+        font-size: 1.8vw;
+        margin-top: 5%;
+    }
+
+    #main_section_hi
+    {
+        font-size: 2.4vw;
     }
 
     #build_web:before
@@ -733,6 +868,134 @@ main
     .change .bar3 {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    .h1_left
+    {
+        font-size: 3vw;
+    }
+
+    .h2_who_is, #h2_section2
+    {
+        font-size: 5.4vw;
+    }
+
+    #h1_section2
+    {
+        font-size: 3vw;
+    }
+
+    #picture_section
+    {
+        display: none;
+    }
+
+    .p_right
+    {
+        font-size: 2.4vw;
+        color: white;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: justify;
+        opacity: 0.8;
+        margin-top: 5%;
+    }
+
+    .technologies_right
+    {
+        display: none;
+    }
+
+    #technologies_section
+    {
+        width: 100%;
+    }
+
+    .sphere
+    {
+        width: 65%;
+        margin: auto;
+    }
+
+    #section1
+    {
+        margin-bottom: 10%;
+    }
+
+    .box_project
+    {
+        margin-top: 5%;
+    }
+
+    .hundred-percentage
+    {
+        margin-bottom: 25%;
+    }
+
+    .experience_projects
+    {
+        width: 100%;
+        display: block;
+        margin-bottom: 5%;
+    }
+
+    .img_left
+    {
+        max-width: 90%;
+        float: center;
+        margin: 0;
+        margin-left: 5%; 
+        height: 95%;
+        position: static;
+    }
+
+    .img_projects, .project_text
+    {
+        transform: translateY(+10%);
+    }
+
+    .text_right
+    {
+        width: 90%;
+        float: center;
+        margin-top: 8%;
+    }
+
+    .text_left
+    {
+        width: 90%;
+        text-align: justify;
+        display: inline-block;
+        overflow: auto;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .img_right
+    {
+        max-width: 90%;
+        display: block;
+        margin-top: 3%;
+        margin-left: 5%;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-radius: 10px;
+    }
+
+    .text_chart
+    {
+        width: 90%;
+        margin-top: 5%;
+        float: center;
+        text-align: center;
+    }
+
+    .chart
+    {
+        height: 400px;
+        width: 95%;
+        margin-top: 5%;
+        float: center;
     }
 
 }
