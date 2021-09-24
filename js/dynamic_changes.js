@@ -137,3 +137,8 @@ function move_imgs(){
     }
     
 }
+
+function myFunction(x)
+{
+    x.classList.toggle("change");
+}

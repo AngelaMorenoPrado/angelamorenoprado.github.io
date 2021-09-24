@@ -612,3 +612,122 @@ main
     border-color: #f6b93b;
     transition: all 0.4s ease 0s;
 }
+
+#btn-menu
+{
+    display: none;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #64ffda;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media (max-width:768px)
+{
+
+    .icon-menu
+    {
+        display: block;
+        position: absolute;
+        right: 2%;
+    }
+
+    .menu
+    {
+        position: absolute;
+        top: 3em;
+        left: 0em;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+    }
+
+    .menu ul
+    {
+        display: block;
+        background: #181818;
+    }
+
+    .menu ul li
+    {
+        width: 100%;
+    }
+
+    .menu ul li, .menu ul li a
+    {
+        color: white;
+    }
+
+    .menu ul li:hover ul
+    {
+        display: none;
+        position: static;
+    }
+
+    .menu span 
+    {
+        position: absolute;
+        right: 3%;
+    }
+
+    #btn-menu:checked ~ .menu
+    {
+        transform: translateX(0%);
+    }
+
+    .menu ul ul 
+    {
+        background: rgba(0,0,0,0.4);
+    }
+
+    .section:hover:after { 
+        width: 0; 
+    }
+
+    #name
+    {
+        font-size: 3em;
+    }
+
+    #build
+    {
+        font-size: 2em;
+    }
+
+    #build_web
+    {
+        font-size: 2.5em;
+    }
+
+    #description
+    {
+        margin-top: 17%;
+    }
+
+    #build_web:before
+    {
+        margin-top: 0.7em;
+        margin-right: 0.1em;
+        content: "";
+        height: 1px;
+        width: 60%;
+        background-color: #ECD6F3;
+    }
+
+}
