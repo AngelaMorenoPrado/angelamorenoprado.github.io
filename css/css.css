@@ -757,6 +757,121 @@ footer
     float: right;
 }
 
+@media (max-width:1024px)
+{
+    #picture_section
+    {
+        display: none;
+    } 
+
+    .p_right
+    {
+        font-size: 2.4vw;
+        color: white;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: justify;
+        opacity: 0.8;
+        margin-top: 5%;
+    }
+
+    #technologies_section
+    {
+        width: 100%;
+    }
+
+    .experience_projects
+    {
+        width: 100%;
+        display: block;
+        margin-bottom: 5%;
+    }
+
+    .img_left
+    {
+        max-width: 90%;
+        float: center;
+        margin: 0;
+        margin-left: 5%; 
+        height: 95%;
+        position: static;
+    }
+
+    .img_projects, .project_text
+    {
+        transform: translateY(+10%);
+    }
+
+    .text_right
+    {
+        width: 90%;
+        float: center;
+        margin-top: 8%;
+    }
+
+    .text_left
+    {
+        width: 90%;
+        text-align: justify;
+        display: inline-block;
+        overflow: auto;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .img_right
+    {
+        max-width: 90%;
+        display: block;
+        margin-top: 3%;
+        margin-left: 5%;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-radius: 10px;
+    }
+
+    #name
+    {
+        font-size: 5.4em;
+    }
+
+    #build
+    {
+        font-size: 3.8em;
+    }
+
+    #build_web
+    {
+        font-size: 3em;
+    }
+
+    #description
+    {
+        font-size: 2vw;
+        margin-top: 5%;
+    }
+
+    #main_section_hi
+    {
+        font-size: 2.4vw;
+    }
+
+    #build_web:before
+    {
+        margin-top: 0.7em;
+        margin-right: 0.1em;
+        content: "";
+        height: 1px;
+        width: 60%;
+        background-color: #ECD6F3;
+    }
+
+    .h2_right
+    {
+        margin-bottom: 5%;
+    }
+}
+
 @media (max-width:768px)
 {
     .icon-menu
