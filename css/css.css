@@ -34,14 +34,14 @@ header
 
 #section1
 {
-    height: 100vh;
+    height: 110vh;
     margin-right: 5%;
     margin-top: 3%;
     width: 86%;
     float: right;
 }
 
-#section2
+#section2, #section3
 {
     height: auto;
     margin-right: 5%;
@@ -60,13 +60,13 @@ header
     float: right;
 }
 
-#opacity_control, #section1 > article > h1, #section1 > article > h2, #section1 > article > p, #technologies_section, #picture_section
+#opacity_control, #section1 > article > h1, #section1 > article > h2, #section1 > article > p, #technologies_section, #picture_section, #h1_section2, #h2_section2, #first_project, #second_project, #third_project, #h1_chart, #h2_chart, #information_chart
 {
     opacity: 0;
     transition: opacity 3s .5s ease-out;
 }
 
-#opacity_control.is-visible, #section1 > article > h1.is-visible, #section1 > article > h2.is-visible, #section1 > article > p.is-visible, #technologies_section.is-visible, #picture_section.is-visible
+#opacity_control.is-visible, #section1 > article > h1.is-visible, #section1 > article > h2.is-visible, #section1 > article > p.is-visible, #technologies_section.is-visible, #picture_section.is-visible, #h1_section2.is-visible, #h2_section2.is-visible, #first_project.is-visible, #second_project.is-visible, #third_project.is-visible, #h1_chart.is-visible, #h2_chart.is-visible, #information_chart.is-visible
 {
     opacity: 1;
 }
@@ -531,4 +531,18 @@ main
 #picture_section > img:hover
 {
     filter: grayscale(100%);
+}
+
+#name_chart
+{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.8;
+}
+
+#text_chart
+{
+    opacity: 0.8;
+    color: white;
 }
