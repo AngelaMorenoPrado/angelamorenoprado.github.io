@@ -914,7 +914,7 @@ footer
 
     .sphere
     {
-        width: 40%;
+        width: 50%;
         float: left;
     }
 
@@ -996,6 +996,12 @@ footer
         width: 95%;
         margin-top: 5%;
         float: center;
+    }
+
+    .tagcloud
+    {
+        width: 300px;
+        height: 300px;
     }
 
 }
