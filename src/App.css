@@ -1,8 +1,17 @@
+@font-face {
+  font-family: 'Cozy Blanket';
+  src: url('./assets/fonts/cozyBlanket.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App {
   text-align: center;
   background-color: #1F1C36;
   padding-left: 15%;
   padding-right: 15%;
+
+  font-family: 'Cozy Blanket', sans-serif;
 }
 
 .introduction {
@@ -19,8 +28,12 @@
   width: 40%;
 
   #greeting {
-    font-size: 2rem;
+    font-size: 7vh;
     color: #fff;
+  }
+
+  .icon {
+    font-size: 6vh;
   }
 }
 

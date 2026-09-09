@@ -11,7 +11,7 @@ export default function Introduction() {
         alt=""
       />
       <article id="text-container">
-        <span id="greeting"><Greeting /> 👋</span>
+        <span id="greeting"><Greeting /></span><span class="icon">👋</span>
       </article>
       <article id="image-container">
         <img src={woman} className="introduction-image" alt="3D Woman" />
