@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-color: #1F1C36;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .introduction {
@@ -9,7 +12,6 @@
   justify-content: space-between;
 
   height: 75vh;
-  background-color: #1F1C36;
 }
 
 #text-container,
@@ -17,7 +19,7 @@
   width: 50%;
 
   img {
-    width: 80%;
+    width: 120%;
     animation: floating 3s ease-in-out infinite;
   }
 
