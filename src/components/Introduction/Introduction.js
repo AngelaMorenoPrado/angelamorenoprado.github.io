@@ -10,11 +10,23 @@ export default function Introduction() {
         className="wave wave-first"
         alt=""
       />
-      <article id="text-container">
-        <span id="greeting"><Greeting /></span><span class="icon">👋</span>
-      </article>
-      <article id="image-container">
-        <img src={woman} className="introduction-image" alt="3D Woman" />
+      <article class="introduction-info">
+        <div id="text-container">
+          <div class="text">
+            <div class="greeting-line">
+              <span id="greeting"><Greeting /></span>
+              <span class="icon">👋</span>
+            </div>
+            <div class="my-data">
+              <span>I'm <span class="my-data-selected">Ángela</span>,</span>
+              <br />
+              <span>a <span class="my-data-selected underlined">frontend</span> developer.</span>
+            </div>
+          </div>
+        </div>
+        <div id="image-container">
+          <img src={woman} className="introduction-image" alt="3D Woman" />
+        </div>
       </article>
     </section>
   );

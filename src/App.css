@@ -6,12 +6,9 @@
 }
 
 .App {
-  text-align: center;
   background-color: #1F1C36;
   padding-left: 15%;
   padding-right: 15%;
-
-  font-family: 'Cozy Blanket', sans-serif;
 }
 
 .introduction {
@@ -24,8 +21,17 @@
   width: 100%;
 }
 
+.introduction-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
 #text-container {
   width: 40%;
+  font-weight: 700;
 
   #greeting {
     font-size: 7vh;
@@ -34,6 +40,17 @@
 
   .icon {
     font-size: 6vh;
+  }
+
+  .my-data {
+    font-size: 5vh;
+    z-index: 5000;
+    color: rgba(255, 255, 255, 0.5);
+
+    .my-data-selected {
+      color: #F5F3FA;
+      font-weight: 800;
+    }
   }
 }
 
@@ -74,14 +91,21 @@
   object-fit: fill;
 
   pointer-events: none;
+  z-index: 1;
 }
 
 #greeting {
   display: inline-flex;
   align-items: baseline;
   gap: 0.3rem;
+  font-family: 'Cozy Blanket', sans-serif;
+  font-weight: 500;
 }
 
 #greeting .Typewriter {
   display: inline;
+}
+
+.underlined {
+  text-decoration: underline;
 }
