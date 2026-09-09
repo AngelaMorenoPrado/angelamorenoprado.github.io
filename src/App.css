@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+.introduction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 75vh;
+}
+
+#text-container,
+#image-container {
+  width: 50%;
+
+  img {
+    width: 80%;
+    animation: floating 3s ease-in-out infinite;
+  }
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(-5deg);
+  }
+}
+
+.introduction-image {
+  width: 100%;
+  height: auto;
+}
