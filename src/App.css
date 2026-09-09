@@ -55,6 +55,11 @@
     width: 80%;
     animation: floating 3s ease-in-out infinite;
   }
+
+  #greeting {
+    font-size: 2rem;
+    color: #fff;
+  }
 }
 
 @keyframes floating {
@@ -85,4 +90,14 @@
   object-fit: fill;
 
   pointer-events: none;
+}
+
+#greeting {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3rem;
+}
+
+#greeting .Typewriter {
+  display: inline;
 }
