@@ -4,7 +4,7 @@ export default function Greeting() {
   return (
     <Typewriter
       options={{
-        strings: ["Hello!", "¡Hola!", "Ciao!", "Bonjour!", "Hallo!"],
+        strings: ["Hi!", "¡Hola!", "Ciao!", "Bonjour!", "Hallo!"],
         autoStart: true,
         loop: true,
         delay: 80,
